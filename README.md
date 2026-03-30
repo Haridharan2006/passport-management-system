@@ -47,12 +47,10 @@ passport-system/
 │   ├── setup.php
 │
 ├── frontend/
-│   ├── index.html
-│   ├── script.js
-│   ├── style.css
-│
-├── sql/
-│   ├── tables.sql
+   ├── index.html
+   ├── script.js
+   ├── style.css
+
 ```
 
 ---
