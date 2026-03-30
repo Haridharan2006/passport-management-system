@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Passport System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Passport Application System</h1>
+<div class="card">
+    <h2> View Applicants</h2>
+    <button onclick="viewAll()">View All</button>
+    <button onclick="firstRecord()">First</button>
+    <button onclick="lastRecord()">Last</button>
+    <br><br>
+    <input type="text" id="searchId" placeholder="Enter ID">
+    <button onclick="searchApplicant()">Search</button>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>App ID</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Verification</th>
+                <th>Passport ID</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+<div class="card">
+    <h2> Add Applicant</h2>
+    <input id="id" placeholder="Applicant ID">
+    <input id="name" placeholder="Name">
+    <button onclick="addApplicant()">Add</button>
+</div>
+<div class="card">
+    <h2> Update Applicant</h2>
+    <input id="uid" placeholder="ID">
+    <input id="newname" placeholder="New Name">
+    <button onclick="updateApplicant()">Update</button>
+</div>
+<div class="card">
+    <h2> Delete Applicant</h2>
+    <input id="did" placeholder="ID">
+    <button onclick="deleteApplicant()">Delete</button>
+</div>
+<div class="card">
+    <h2> Add Application</h2>
+    <input id="appId" placeholder="Application ID">
+    <input id="applicantId" placeholder="Applicant ID">
+    <select id="type">
+        <option>Normal</option>
+        <option>Tatkal</option>
+    </select>
+    <button onclick="addApplication()">Add</button>
+</div>
+<div class="card">
+    <h2> Payment</h2>
+    <input id="payId" placeholder="Payment ID">
+    <input id="appIdPay" placeholder="Application ID">
+    <input id="amount" placeholder="Amount">
+    <button onclick="addPayment()">Pay</button>
+</div>
+<div class="card">
+    <h2> Verification</h2>
+    <input id="verId" placeholder="Verification ID">
+    <input id="appIdVer" placeholder="Application ID">
+    <select id="verStatus">
+        <option>Pending</option>
+        <option>Approved</option>
+    </select>
+    <button onclick="addVerification()">Verify</button>
+</div>
+<div class="card">
+    <h2> Issue Passport</h2>
+    <input id="pid" placeholder="Passport ID">
+    <input id="aid" placeholder="Applicant ID">
+    <select id="status">
+        <option>Pending</option>
+        <option>Approved</option>
+    </select>
+    <button onclick="addPassport()">Issue</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
